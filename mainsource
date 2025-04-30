@@ -1,0 +1,21 @@
+function ConnectP7(plr)
+    plr.Chatted:Connect(function(msg)
+        local command, message1, message2 = string.match(msg, '^(%S+)%s+(%S+)%s+(.+)$')
+        if command == "..argstest" then
+            if dontuse then warn("Dontuse activated; Running one time") return end 
+            dontuse = true
+            task.wait(.1)
+            notif(message1 .." : ".. message2)
+            task.wait(.6)
+            dontuse = false
+        end
+    end)
+end
+
+for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+  ConnectP700(v)
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(plr)
+    ConnectP700(plr)
+end)
