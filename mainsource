@@ -1,4 +1,4 @@
-function ConnectP7(plr)
+function ConnectP700(plr)
     plr.Chatted:Connect(function(msg)
         local command, message1, message2 = string.match(msg, '^(%S+)%s+(%S+)%s+(.+)$')
         if command == "..argstest" then
