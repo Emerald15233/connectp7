@@ -1,5 +1,5 @@
 game.StarterGui:SetCore("SendNotification", {
-    Title = "unupdated";
-    Text = "noob"; 
+    Title = "updated";
+    Text = "aaaa"; 
     Duration = 5;
 })
