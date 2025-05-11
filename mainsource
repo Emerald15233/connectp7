@@ -1,1 +1,5 @@
-print("d")
+game.StarterGui:SetCore("SendNotification", {
+    Title = "unupdated";
+    Text = "noob"; 
+    Duration = 5;
+})
